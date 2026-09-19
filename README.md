@@ -7,6 +7,7 @@
 <img width="1571" height="856" alt="image" src="https://github.com/user-attachments/assets/0196643f-9b32-48b3-b916-98c70580cb95" />
 
 <img width="1650" height="822" alt="image" src="https://github.com/user-attachments/assets/a07b59eb-2ac8-4c1b-bf9e-4852c39ec0d2" />
+הנה תוכן מלא ומעוצב לקובץ **`README.md`** שתוכל להעתיק ישירות ל-Repository שלך ב-GitHub:
 
 ---
 
@@ -34,3 +35,80 @@
 ```css
 /* מאפיין | משך זמן | פונקציית תזמון | השהיה */
 transition: background-color 0.4s ease 0s;
+
+```
+
+### סוגי פונקציות תזמון (`timing-function`):
+
+* `linear` — מהירות קבועה ואחידה מההתחלה ועד הסוף.
+* `ease` — התחלה איטית, האצה באמצע והאטה בסיום (ברירת מחדל).
+* `ease-in` — התחלה איטית ומעבר מהיר בסוף.
+* `ease-out` — התחלה מהירה ובלימה איטית בסוף.
+* `ease-in-out` — התחלה וסיום איטיים, עם אמצע מואץ.
+
+---
+
+## 🛠 מאפיינים המודגמים בפרויקט
+
+בדף האינטראקטיבי מוצגים 13 כרטיסים נפרדים, כאשר כל כרטיס מדגים מעבר על מאפיין ספציפי:
+
+1. **`background-color`** — שינוי הדרגתי של צבע הרקע.
+2. **`color`** — שינוי צבע הטקסט.
+3. **`font-size`** — הגדלה או הקטנה של הגופן.
+4. **`height`** — שינוי גובה האלמנט.
+5. **`width`** — הרחבה או כיווץ של הרוחב.
+6. **`letter-spacing`** — פריסת רווחים בין אותיות.
+7. **`line-height`** — שינוי המרווח האנכי בין שורות.
+8. **`margin-top`** — דחיפת האלמנט כלפי מטה באמצעות מרווח עליון.
+9. **`margin-bottom`** — הגדלת המרווח התחתון.
+10. **`opacity`** — מעבר הדרגתי בין שקיפות לאטימות (Fade).
+11. **`padding`** — הגדלת שטח הלחיצה הפנימי.
+12. **`border-color`** — החלפת צבע המסגרת.
+13. **`border-width`** — עיבוי או עידון של עובי המסגרת.
+
+---
+
+## 🧩 שילוב בספריות ופריימוורקים
+
+העקרונות המודגמים כאן מהווים את הבסיס למערכות עיצוב וספריות מובילות:
+
+* **Tailwind CSS:** שימוש במחלקות מוכנות כגון `transition-all`, `duration-300`, ו-`ease-in-out`.
+* **Bootstrap:** רכיבים אינטראקטיביים מובנים (כגון Modals, Tooltips ו-Dropdowns) נשענים על CSS transitions.
+* **React / Vue / Svelte:** ספריות אנימציה כמו `Framer Motion` או רכיב ה-`<Transition>` של Vue עושים שימוש במאפיינים אלו לניהול כניסה ויציאה של רכיבים מה-DOM.
+
+---
+
+## 🚀 התקנה והרצה מקומית
+
+אין צורך בהתקנת חבילות או שרת מקומי.
+
+1. שכפל את הפרויקט:
+```bash
+git clone [https://github.com/eylommaayan/css-transitions-guide.git](https://github.com/eylommaayan/css-transitions-guide.git)
+
+```
+
+
+2. היכנס לתיקיית הפרויקט:
+```bash
+cd css-transitions-guide
+
+```
+
+
+3. פתח את הקובץ `index.html` ישירות בדפדפן.
+
+---
+
+## 📁 מבנה הקבצים
+
+```text
+├── index.html        # שלד הדף ומבנה הכרטיסים עם ההסברים
+├── style.css         # עיצוב הדף והגדרות ה-transition לכל כפתור
+└── README.md         # תיעוד ומדריך הפרויקט
+
+```
+
+```
+
+```
