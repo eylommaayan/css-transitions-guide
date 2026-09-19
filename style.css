@@ -1,0 +1,236 @@
+/* הגדרות כלליות וטיפוגרפיה */
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background-color: #f0f3f8;
+  margin: 0;
+  padding: 40px 20px;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* אזור ההקדמה וההסבר העליון */
+.main-header {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.main-header h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #1a2a4b;
+  margin-bottom: 24px;
+}
+
+.intro-box {
+  background: #ffffff;
+  border-right: 6px solid royalblue;
+  padding: 24px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.intro-box h2 {
+  margin-top: 0;
+  color: royalblue;
+  font-size: 22px;
+}
+
+.intro-box h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.intro-box p {
+  margin: 6px 0;
+  color: #4a5568;
+}
+
+.intro-box ul {
+  padding-right: 20px;
+  margin: 8px 0;
+  color: #4a5568;
+}
+
+.intro-box code {
+  background-color: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  direction: ltr;
+  display: inline-block;
+}
+
+/* פריסת הגריד של הדוגמאות */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 230px;
+}
+
+.card h3 {
+  margin: 0 0 16px 0;
+  font-size: 17px;
+  color: #1a237e;
+  direction: ltr;
+  font-family: Consolas, monospace;
+}
+
+/* תיאור קצר מתחת לכל כפתור */
+.prop-desc {
+  font-size: 13.5px;
+  color: #5a6a85;
+  margin: 16px 0 0 0;
+  line-height: 1.45;
+}
+
+/* עיצוב בסיסי לכל הכפתורים */
+.btn {
+  background-color: royalblue;
+  color: #ffffff;
+  border: 2px solid transparent;
+  font-size: 15px;
+  cursor: pointer;
+  width: 180px;
+  height: 48px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------
+   הגדרות Transition ייעודיות לכל כפתור
+------------------------------------------------------------- */
+
+/* 1. Background */
+.btn-bg {
+  transition: background-color 0.4s ease;
+}
+.btn-bg:hover {
+  background-color: #d84315;
+}
+
+/* 2. Color */
+.btn-color {
+  transition: color 0.4s ease;
+}
+.btn-color:hover {
+  color: #ffd600;
+}
+
+/* 3. Font Size */
+.btn-font-size {
+  transition: font-size 0.4s ease;
+}
+.btn-font-size:hover {
+  font-size: 20px;
+}
+
+/* 4. Height */
+.btn-height {
+  transition: height 0.4s ease;
+}
+.btn-height:hover {
+  height: 75px;
+}
+
+/* 5. Width */
+.btn-width {
+  transition: width 0.4s ease;
+}
+.btn-width:hover {
+  width: 230px;
+}
+
+/* 6. Letter Spacing */
+.btn-letter-spacing {
+  letter-spacing: normal;
+  transition: letter-spacing 0.4s ease;
+}
+.btn-letter-spacing:hover {
+  letter-spacing: 4px;
+}
+
+/* 7. Line Height */
+.btn-line-height {
+  line-height: 1.1;
+  transition: line-height 0.4s ease;
+}
+.btn-line-height:hover {
+  line-height: 2.2;
+}
+
+/* 8. Margin Top */
+.btn-margin-top {
+  margin-top: 0;
+  transition: margin-top 0.4s ease;
+}
+.btn-margin-top:hover {
+  margin-top: 20px;
+}
+
+/* 9. Margin Bottom */
+.btn-margin-bottom {
+  margin-bottom: 0;
+  transition: margin-bottom 0.4s ease;
+}
+.btn-margin-bottom:hover {
+  margin-bottom: 25px;
+}
+
+/* 10. Opacity */
+.btn-opacity {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.btn-opacity:hover {
+  opacity: 0.25;
+}
+
+/* 11. Padding */
+.btn-padding {
+  padding: 8px 16px;
+  width: auto;
+  transition: padding 0.4s ease;
+}
+.btn-padding:hover {
+  padding: 18px 40px;
+}
+
+/* 12. Border Color */
+.btn-border-color {
+  border: 4px solid #ffffff;
+  transition: border-color 0.4s ease;
+}
+.btn-border-color:hover {
+  border-color: #00e676;
+}
+
+/* 13. Border Width */
+.btn-border-width {
+  border: 2px solid #00e676;
+  transition: border-width 0.4s ease;
+}
+.btn-border-width:hover {
+  border-width: 8px;
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מדריך לימודי: CSS Transitions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>מדריך לימודי: מאפייני CSS Transition</h1>
+
+      <!-- הסבר מורחב על המושג transition, שימושיו ושילוב בספריות -->
+      <div class="intro-box">
+        <h2>מה זה CSS Transition?</h2>
+        <p>
+          <strong>CSS Transition</strong> הוא כלי המאפשר לשנות ערכי מאפיינים
+          בצורה הדרגתית וחלקה לאורך זמן נתון, במקום שהשינוי יתרחש באופן מיידי
+          וחד[cite: 1].
+        </p>
+
+        <h3>למה הוא משמש ומה אפשר לעשות איתו?</h3>
+        <p>
+          הוא משמש בעיקר ליצירת
+          <strong>מיקרו-אינטראקציות (Micro-interactions)</strong> ומשוב ויזואלי
+          למשתמש בעת פעולות כמו מעבר עכבר (<code>:hover</code>), לחיצה
+          (<code>:active</code>) או פוקוס (<code>:focus</code>). בעזרתו ניתן
+          לייצר כפתורים אינטראקטיביים, תפריטים נפתחים, גלריות מונפשות, חלוניות
+          מודאליות והדגשת אלמנטים.
+        </p>
+
+        <h3>האם אפשר לשלב אותו בספריות ופריימוורקים?</h3>
+        <p>
+          <strong>כן, לחלוטין:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>ספריות CSS (כגון Tailwind CSS או Bootstrap):</strong> כוללות
+            מחלקות מוכנות מראש המבוססות ישירות על
+            <code>transition</code> (לדוגמה:
+            <code>transition-all duration-300 ease-in-out</code> ב-Tailwind).
+          </li>
+          <li>
+            <strong>ספריות צד-לקוח (React, Vue, Svelte):</strong> משתמשות ב-CSS
+            Transitions כדי לייצר אנימציות כניסה ויציאה של רכיבים מה-DOM (למשל
+            בעזרת <code>framer-motion</code> או רכיב ה-<code
+              >&lt;Transition&gt;</code
+            >
+            המובנה ב-Vue).
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- רשת הכרטיסים עם ההסברים והכפתורים -->
+    <main class="cards-container">
+      <!-- 1. Background -->
+      <div class="card">
+        <h3>1. background-color</h3>
+        <button class="btn btn-bg">שנה צבע רקע</button>
+        <p class="prop-desc">
+          מבצע מעבר רציף בין צבעי רקע[cite: 1, 2]. שימושי להבלטת כפתורים ולמתן
+          משוב מיידי על פעולת המשתמש.
+        </p>
+      </div>
+
+      <!-- 2. Color -->
+      <div class="card">
+        <h3>2. color</h3>
+        <button class="btn btn-color">שנה צבע טקסט</button>
+        <p class="prop-desc">
+          משנה את גוון הטקסט בצורה הדרגתית[cite: 2]. מתאים לקישורים ולתפריטי
+          ניווט כדי להבליט טקסט פעיל.
+        </p>
+      </div>
+
+      <!-- 3. Font Size -->
+      <div class="card">
+        <h3>3. font-size</h3>
+        <button class="btn btn-font-size">שנה גודל גופן</button>
+        <p class="prop-desc">
+          מגדיל או מקטין את הטקסט בצורה רציפה[cite: 2]. משמש להדגשת כותרות או
+          פריטים נבחרים בעת הצבעה.
+        </p>
+      </div>
+
+      <!-- 4. Height -->
+      <div class="card">
+        <h3>4. height</h3>
+        <button class="btn btn-height">שנה גובה</button>
+        <p class="prop-desc">
+          משנה את גובה האלמנט לאורך זמן[cite: 2]. נפוץ ביצירת תפריטי אקורדיון
+          וחשיפת תוכן מוסתר במעבר חלק.
+        </p>
+      </div>
+
+      <!-- 5. Width -->
+      <div class="card">
+        <h3>5. width</h3>
+        <button class="btn btn-width">שנה רוחב</button>
+        <p class="prop-desc">
+          מרחיב או מכווץ את רוחב האלמנט[cite: 2]. משמש לפסי התקדמות (Progress
+          bars) ושדות חיפוש שנפתחים בלחיצה.
+        </p>
+      </div>
+
+      <!-- 6. Letter Spacing -->
+      <div class="card">
+        <h3>6. letter-spacing</h3>
+        <button class="btn btn-letter-spacing">רווח אותיות</button>
+        <p class="prop-desc">
+          מרחיב בצורה חלקה את הרווח בין האותיות[cite: 2]. יוצר אפקט טיפוגרפי
+          אלגנטי ומודרני בכותרות ובכפתורים.
+        </p>
+      </div>
+
+      <!-- 7. Line Height -->
+      <div class="card">
+        <h3>7. line-height</h3>
+        <button class="btn btn-line-height">שורה א'<br />שורה ב'</button>
+        <p class="prop-desc">
+          משנה את המרווח האנכי בין שורות הטקסט[cite: 2]. מסייע בהתאמת מרווחי
+          קריאה דינמיים בעת אינטראקציה.
+        </p>
+      </div>
+
+      <!-- 8. Margin Top -->
+      <div class="card">
+        <h3>8. margin-top</h3>
+        <button class="btn btn-margin-top">הזז למטה</button>
+        <p class="prop-desc">
+          מגדיל את המרווח החיצוני העליון ודוחף את האלמנט מטה[cite: 2]. יוצר
+          תחושת תנועה ומיקום מחדש.
+        </p>
+      </div>
+
+      <!-- 9. Margin Bottom -->
+      <div class="card">
+        <h3>9. margin-bottom</h3>
+        <button class="btn btn-margin-bottom">דחוף מרווח תחתון</button>
+        <p class="prop-desc">
+          מרחיק אלמנטים שנמצאים מתחת לכפתור[cite: 2]. מתאים ליצירת מרווח נשימה
+          זמני כשאלמנט מתמקד.
+        </p>
+      </div>
+
+      <!-- 10. Opacity -->
+      <div class="card">
+        <h3>10. opacity</h3>
+        <button class="btn btn-opacity">שנה שקיפות</button>
+        <p class="prop-desc">
+          שולט ברמת השקיפות (Fade-in / Fade-out)[cite: 2]. מעבר יעיל ומהיר
+          במיוחד לכרטיסיות ופופ-אפים.
+        </p>
+      </div>
+
+      <!-- 11. Padding -->
+      <div class="card">
+        <h3>11. padding</h3>
+        <button class="btn btn-padding">שנה ריווח פנימי</button>
+        <p class="prop-desc">
+          מרחיב את שטח הלחיצה הפנימי של הכפתור בצורה חלקה[cite: 2], מה שמעניק
+          תחושת תפיחה ואלסטיות.
+        </p>
+      </div>
+
+      <!-- 12. Border Color -->
+      <div class="card">
+        <h3>12. border-color</h3>
+        <button class="btn btn-border-color">שנה צבע מסגרת</button>
+        <p class="prop-desc">
+          משנה את צבע הגבול החיצוני[cite: 2]. נפוץ מאוד בהדגשת שדות טופס פעילים
+          וכפתורי מסגרת (Ghost buttons).
+        </p>
+      </div>
+
+      <!-- 13. Border Width -->
+      <div class="card">
+        <h3>13. border-width</h3>
+        <button class="btn btn-border-width">שנה עובי מסגרת</button>
+        <p class="prop-desc">
+          מעבה את מסגרת האלמנט בהדרגה[cite: 2]. מוסיף נוכחות פיזית ומדגיש את
+          גבולות הרכיב.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
